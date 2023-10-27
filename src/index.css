@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    th,td {
+        @apply border border-slate-200 text-start p-2 hover:border-slate-400 cursor-pointer;
+    }
+    thead {
+        @apply bg-white text-base font-semibold
+    }
+    tbody {
+        @apply text-sm font-medium
+    }
+    table {
+        @apply table-auto border border-separate border-spacing-1  border-slate-300 rounded-md shadow-sm w-full
+    }
+    .filters p {
+        @apply border p-2 px-4 cursor-pointer font-medium text-sm bg-slate-300/80 hover:bg-slate-400 duration-300
+    }
+    .filters .active {
+        @apply bg-slate-400 
+    }
+}
